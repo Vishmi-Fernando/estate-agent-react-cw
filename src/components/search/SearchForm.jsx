@@ -1,11 +1,13 @@
 import { useState } from "react";
+import filterProperties from "../../utils/filterProperties";
 import PropertyTypeSelect from "./PropertyTypeSelect";
 import PriceRangeInput from "./PriceRangeInput";
 import BedroomRangeInput from "./BedroomRangeInput";
 import PostcodeInput from "./PostcodeInput";
 import DateAddedPicker from "./DateAddedPicker";
 
-function SearchForm() {
+
+function SearchForm({ properties, onSearch }) {
   const [type, setType] = useState("Any");
   const [minPrice, setMinPrice] = useState("");
   const [maxPrice, setMaxPrice] = useState("");
@@ -15,9 +17,22 @@ function SearchForm() {
   const [dateAdded, setDateAdded] = useState("");
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    // search logic will be added next
+  e.preventDefault();
+
+  const filters = {
+    type,
+    minPrice,
+    maxPrice,
+    minBeds,
+    maxBeds,
+    postcode,
+    dateAdded,
   };
+
+  const results = filterProperties(properties, filters);
+  onSearch(results);
+};
+
 
   return (
     <form className="search-form" onSubmit={handleSubmit}>
