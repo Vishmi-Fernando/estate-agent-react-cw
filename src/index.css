@@ -131,6 +131,66 @@ body {
   font-size: 0.9rem;
 }
 
+/* ===== Property Details ===== */
+.property-details {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.main-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+.thumbnail-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.thumbnail {
+  width: 70px;
+  height: 50px;
+  object-fit: cover;
+  cursor: pointer;
+  opacity: 0.6;
+  border-radius: 4px;
+}
+
+.thumbnail.active,
+.thumbnail:hover {
+  opacity: 1;
+  border: 2px solid #2c3e50;
+}
+
+/* ===== Tabs ===== */
+.tabs {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.tabs button {
+  padding: 8px 12px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.tabs button:hover {
+  background: #bbb;
+}
+
+.tab-content {
+  margin-top: 15px;
+}
+
+
 /* ===== Responsive (Tablet & below) ===== */
 @media (max-width: 768px) {
   .property-list {
