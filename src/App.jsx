@@ -1,12 +1,8 @@
-import { useState } from "react";
-import propertiesData from "./data/properties.json";
-import SearchForm from "./components/search/SearchForm";
-import PropertyList from "./components/property/PropertyList";
+import { Routes, Route } from "react-router-dom";
+import SearchPage from "./pages/SearchPage";
+import PropertyDetailsPage from "./pages/PropertyDetailsPage";
 
 function App() {
-  const [properties] = useState(propertiesData.properties);
-  const [results, setResults] = useState(properties);
-
   return (
     <>
       <div className="app-header">
@@ -15,14 +11,10 @@ function App() {
       </div>
 
       <div className="app">
-        <SearchForm
-          properties={properties}
-          onSearch={setResults}
-        />
-
-        <p>Results found: {results.length}</p>
-
-        <PropertyList properties={results} />
+        <Routes>
+          <Route path="/" element={<SearchPage />} />
+          <Route path="/property/:id" element={<PropertyDetailsPage />} />
+        </Routes>
       </div>
     </>
   );

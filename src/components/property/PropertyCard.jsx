@@ -1,6 +1,11 @@
+import { Link } from "react-router-dom";
+
 function PropertyCard({ property }) {
   return (
-    <div className="property-card">
+    <Link
+      to={`/property/${property.id}`}
+      className="property-card"
+    >
       <img
         src={`/images/${property.id}/img1.jpg`}
         alt={property.type}
@@ -11,7 +16,7 @@ function PropertyCard({ property }) {
         <p>{property.type} • {property.bedrooms} bedrooms</p>
         <p>{property.location}</p>
       </div>
-    </div>
+    </Link>
   );
 }
 
