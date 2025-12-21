@@ -8,16 +8,23 @@ function App() {
   const [results, setResults] = useState(properties);
 
   return (
-    <div className="app">
-      <h1>🏠 Estate Agent Property Search</h1>
+    <>
+      <div className="app-header">
+        <h1>🏠 Estate Agent Property Search</h1>
+        <p>Find your perfect home</p>
+      </div>
 
-      <SearchForm
-        properties={properties}
-        onSearch={setResults}
-      />
+      <div className="app">
+        <SearchForm
+          properties={properties}
+          onSearch={setResults}
+        />
 
-      <PropertyList properties={results} />
-    </div>
+        <p>Results found: {results.length}</p>
+
+        <PropertyList properties={results} />
+      </div>
+    </>
   );
 }
 
