@@ -2,6 +2,7 @@ import { useState } from "react";
 import PropertyTypeSelect from "./PropertyTypeSelect";
 import PriceRangeInput from "./PriceRangeInput";
 import BedroomRangeInput from "./BedroomRangeInput";
+import PostcodeInput from "./PostcodeInput";
 
 function SearchForm() {
   const [type, setType] = useState("Any");
@@ -9,6 +10,7 @@ function SearchForm() {
   const [maxPrice, setMaxPrice] = useState("");
   const [minBeds, setMinBeds] = useState("");
   const [maxBeds, setMaxBeds] = useState("");
+  const [postcode, setPostcode] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -34,6 +36,8 @@ function SearchForm() {
         onMinChange={setMinBeds}
         onMaxChange={setMaxBeds}
       />
+
+      <PostcodeInput value={postcode} onChange={setPostcode} />
 
       <button type="submit">Search</button>
     </form>
