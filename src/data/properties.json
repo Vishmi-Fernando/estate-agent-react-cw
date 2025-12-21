@@ -1,0 +1,88 @@
+{
+  "properties": [
+    {
+      "id": "prop1",
+      "type": "House",
+      "bedrooms": 3,
+      "price": 750000,
+      "tenure": "Freehold",
+      "description": "Attractive three bedroom semi-detached family home situated within walking distance of local amenities.",
+      "location": "Petts Wood Road, Orpington BR5",
+      "picture": "images/prop1.jpg",
+      "url": "properties/prop1.html",
+      "added": { "month": "October", "day": 12, "year": 2022 }
+    },
+    {
+      "id": "prop2",
+      "type": "Flat",
+      "bedrooms": 2,
+      "price": 399995,
+      "tenure": "Leasehold",
+      "description": "Modern two bedroom flat with open plan living and private garden.<br>Ideal for first time buyers.",
+      "location": "Crofton Road, Orpington BR6",
+      "picture": "images/prop2.jpg",
+      "url": "properties/prop2.html",
+      "added": { "month": "September", "day": 14, "year": 2022 }
+    },
+    {
+      "id": "prop3",
+      "type": "House",
+      "bedrooms": 4,
+      "price": 925000,
+      "tenure": "Freehold",
+      "description": "Spacious four bedroom detached house with garage and large garden.",
+      "location": "Chislehurst Road, Bromley BR7",
+      "picture": "images/prop3.jpg",
+      "url": "properties/prop3.html",
+      "added": { "month": "January", "day": 5, "year": 2023 }
+    },
+    {
+      "id": "prop4",
+      "type": "Flat",
+      "bedrooms": 1,
+      "price": 275000,
+      "tenure": "Leasehold",
+      "description": "One bedroom city apartment close to transport links.",
+      "location": "Lewisham High Street, London SE13",
+      "picture": "images/prop4.jpg",
+      "url": "properties/prop4.html",
+      "added": { "month": "March", "day": 20, "year": 2023 }
+    },
+    {
+      "id": "prop5",
+      "type": "House",
+      "bedrooms": 5,
+      "price": 1200000,
+      "tenure": "Freehold",
+      "description": "Luxury five bedroom family home with modern interiors.",
+      "location": "Bickley Park Road, Bickley BR1",
+      "picture": "images/prop5.jpg",
+      "url": "properties/prop5.html",
+      "added": { "month": "June", "day": 10, "year": 2023 }
+    },
+    {
+      "id": "prop6",
+      "type": "Flat",
+      "bedrooms": 3,
+      "price": 560000,
+      "tenure": "Leasehold",
+      "description": "Three bedroom penthouse flat with balcony and views.",
+      "location": "Canary Wharf, London E14",
+      "picture": "images/prop6.jpg",
+      "url": "properties/prop6.html",
+      "added": { "month": "August", "day": 2, "year": 2023 }
+    },
+    {
+      "id": "prop7",
+      "type": "House",
+      "bedrooms": 2,
+      "price": 480000,
+      "tenure": "Freehold",
+      "description": "Two bedroom cottage style house ideal for small families.",
+      "location": "West Wickham Road, West Wickham BR4",
+      "picture": "images/prop7.jpg",
+      "url": "properties/prop7.html",
+      "added": { "month": "November", "day": 18, "year": 2023 }
+    }
+  ]
+}
