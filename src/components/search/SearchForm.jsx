@@ -3,6 +3,7 @@ import PropertyTypeSelect from "./PropertyTypeSelect";
 import PriceRangeInput from "./PriceRangeInput";
 import BedroomRangeInput from "./BedroomRangeInput";
 import PostcodeInput from "./PostcodeInput";
+import DateAddedPicker from "./DateAddedPicker";
 
 function SearchForm() {
   const [type, setType] = useState("Any");
@@ -11,10 +12,11 @@ function SearchForm() {
   const [minBeds, setMinBeds] = useState("");
   const [maxBeds, setMaxBeds] = useState("");
   const [postcode, setPostcode] = useState("");
+  const [dateAdded, setDateAdded] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // search logic will be added later
+    // search logic will be added next
   };
 
   return (
@@ -38,6 +40,8 @@ function SearchForm() {
       />
 
       <PostcodeInput value={postcode} onChange={setPostcode} />
+
+      <DateAddedPicker value={dateAdded} onChange={setDateAdded} />
 
       <button type="submit">Search</button>
     </form>
