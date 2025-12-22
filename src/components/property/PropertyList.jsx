@@ -1,4 +1,4 @@
-import PropertyCard from "./PropertyCard";
+import PropertyCard from "./PropertyCard"; // import property cards to display in search page
 
 function PropertyList({ properties, onAddFavourite }) {
   if (properties.length === 0) {
@@ -7,9 +7,11 @@ function PropertyList({ properties, onAddFavourite }) {
 
   return (
     <div className="property-list">
+
+      {/* displays property cards */}
       {properties.map((property) => (
         <PropertyCard
-          key={property.id}
+          key={property.id} // react optimization
           property={property}
           onAddFavourite={onAddFavourite}
         />

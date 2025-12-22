@@ -1,9 +1,12 @@
+// widget: Price Range search component of Search Page
+
 function PriceRangeInput({ minPrice, maxPrice, onMinChange, onMaxChange }) {
   return (
+    // Price range criteria in form
     <div className="form-group">
       <label>Price Range</label>
-
       <div className="price-range">
+         {/* min price of price range  */}
         <input
           type="number"
           placeholder="Min price"
@@ -11,6 +14,7 @@ function PriceRangeInput({ minPrice, maxPrice, onMinChange, onMaxChange }) {
           onChange={(e) => onMinChange(e.target.value)}
         />
 
+        {/* max price of price range */}
         <input
           type="number"
           placeholder="Max price"
