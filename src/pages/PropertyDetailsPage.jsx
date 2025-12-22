@@ -31,7 +31,7 @@ function PropertyDetailsPage() {
       {/* Image Gallery */}
       {/*Main Image*/}
       <img
-        src={`/images/${property.id}/${activeImage}`}
+        src={`images/${property.id}/${activeImage}`}
         alt="Property"
         className="main-image"
       />
@@ -41,7 +41,7 @@ function PropertyDetailsPage() {
         {[1, 2, 3, 4, 5, 6].map((num) => (
           <img
             key={num}
-            src={`/images/${property.id}/img${num}.jpg`}
+            src={`images/${property.id}/img${num}.jpg`}
             alt={`Thumbnail ${num}`}
             // track active image
             className={`thumbnail ${
@@ -85,7 +85,7 @@ function PropertyDetailsPage() {
         {/* display floor plan image of each property */}
         {activeTab === "floorplan" && (
           <img
-            src={`/images/${property.id}/floor1.jpg`}
+            src={`images/${property.id}/floor1.jpg`}
             alt="Floor plan"
             style={{ width: "100%" }}
           />

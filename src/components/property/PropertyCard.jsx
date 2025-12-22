@@ -18,7 +18,7 @@ function PropertyCard({ property, onAddFavourite }) {
       {/* display details property page when clicking */}
       <Link to={`/property/${property.id}`}> 
         <img
-          src={`/images/${property.id}/img1.jpg`}
+          src={`images/${property.id}/img1.jpg`}
           alt={property.type}
         />
       </Link>
