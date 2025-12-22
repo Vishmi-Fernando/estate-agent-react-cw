@@ -7,6 +7,7 @@ import FavouritesList from "../components/favourites/FavouritesList";
 
 
 function SearchPage() {
+
   const [properties] = useState(propertiesData.properties); // stores all properties
   const [results, setResults] = useState(properties); // stores filtered results
   const [favourites, setFavourites] = useState([]); // stores favorite properties
