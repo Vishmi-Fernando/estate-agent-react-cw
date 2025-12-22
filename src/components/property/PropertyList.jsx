@@ -1,6 +1,6 @@
 import PropertyCard from "./PropertyCard";
 
-function PropertyList({ properties }) {
+function PropertyList({ properties, onAddFavourite }) {
   if (properties.length === 0) {
     return <p>No properties found.</p>;
   }
@@ -11,6 +11,7 @@ function PropertyList({ properties }) {
         <PropertyCard
           key={property.id}
           property={property}
+          onAddFavourite={onAddFavourite}
         />
       ))}
     </div>

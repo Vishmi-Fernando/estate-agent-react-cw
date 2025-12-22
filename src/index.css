@@ -190,6 +190,51 @@ body {
   margin-top: 15px;
 }
 
+/* ===== Favourites ===== */
+.favourites {
+  background: white;
+  padding: 15px;
+  padding-bottom: 1420px;
+  border-radius: 10px;
+}
+
+.favourite-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.favourite-thumb {
+  width: 50px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.favourite-item span {
+  flex: 1;
+  font-size: 0.85rem;
+}
+
+.favourite-item button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: red;
+}
+
+/* ===== Remove Drop Zone ===== */
+.remove-zone {
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  border: 2px dashed #c0392b;
+  color: #c0392b;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
 
 /* ===== Responsive (Tablet & below) ===== */
 @media (max-width: 768px) {
