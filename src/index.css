@@ -2,13 +2,13 @@
 body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
-  background-color: #e9dca7;
+  background-color: #3B9797;
   color: #333;
 }
 
 /*Header*/
 .app-header {
-  background-color: #0b401e;
+  background-color: #132440;
   padding: 25px 20px;
   text-align: center;
   margin-bottom: 25px;
@@ -29,7 +29,7 @@ body {
 
 /*Footer*/
 .footer {
-  background-color: #0b401e;
+  background-color: #132440;
   color: #FFFFFF;
   padding: 25px;
   text-align: center;
@@ -51,13 +51,13 @@ body {
   margin-bottom: 25px;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  color: #0b401e;
+  color: #132440;
 }
 
 .search-form h2 {
   margin-top: 0;
   margin-bottom: 15px;
-  color: #0b401e;
+  color: #132440;
 }
 
 .form-group {
@@ -89,7 +89,7 @@ body {
   margin-top: 10px;
   padding: 12px;
   width: 100%;
-  background-color: #0b401e;
+  background-color: #16476A;
   color: white;
   border: none;
   border-radius: 6px;
@@ -98,7 +98,7 @@ body {
 }
 
 .search-form button:hover {
-  background-color: #136a33;
+  background-color: #132440;
 }
 
 /*Property Results*/
@@ -134,7 +134,7 @@ body {
 
 .property-info h3 {
   margin: 0;
-  color: #27ae60;
+  color: #132440;
 }
 
 .property-info p {
@@ -147,7 +147,7 @@ body {
   background: rgb(224, 227, 238);
   padding: 20px;
   border-radius: 10px;
-  color: #0b401e;
+  color: #132440;
 }
 
 .main-image {
@@ -176,7 +176,7 @@ body {
 .thumbnail.active,
 .thumbnail:hover {
   opacity: 1;
-  border: 2px solid #0b401e;
+  border: 2px solid #16476A;
 }
 
 /* ===== Tabs ===== */
@@ -207,7 +207,7 @@ body {
   background: rgb(224, 227, 238);
   padding: 15px;
   border-radius: 10px;
-  color: #0b401e;
+  color: #132440;
 }
 
 .favourite-item {
