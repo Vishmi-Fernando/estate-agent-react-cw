@@ -50,7 +50,7 @@ function FavouritesList({ favourites, onAdd, onRemove }) {
         >
             {/* Property Thumbnail */}
             <img
-            src={`/images/${property.id}/img1.jpg`} // loads property image dynamically
+            src={`images/${property.id}/img1.jpg`} // loads property image dynamically
             alt="Property thumbnail"
             className="favourite-thumb"
             />
